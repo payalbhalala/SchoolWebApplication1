@@ -1,4 +1,4 @@
-using SchoolWebApplication1.Extensions;
+using SchoolAPI.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpOverrides;
@@ -8,7 +8,7 @@ using Microsoft.Extensions.Hosting;
 using NLog;
 using System.IO;
 
-namespace SchoolWebApplication1
+namespace SchoolAPI
 {
     public class Startup
     {
@@ -24,7 +24,8 @@ namespace SchoolWebApplication1
         public void ConfigureServices(IServiceCollection services)
         {
             services.ConfigureLoggerService();
-
+            services.ConfigureSqlContext(Configuration);
+            services.ConfigureRepositoryManager();
             services.AddControllers();
         }
 
