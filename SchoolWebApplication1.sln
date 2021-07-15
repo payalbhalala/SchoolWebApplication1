@@ -5,9 +5,13 @@ VisualStudioVersion = 16.0.31402.337
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolWebApplication1", "SchoolWebApplication1\SchoolWebApplication1.csproj", "{B539E1D9-A34D-43A3-8787-8F027D61C0F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{3393B89E-BFFC-42FD-A81F-332D1379DB25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "Contracts\Contracts.csproj", "{3393B89E-BFFC-42FD-A81F-332D1379DB25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerService", "LoggerService\LoggerService.csproj", "{CAE0EB52-109A-442C-A963-DB0375C00D1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggerService", "LoggerService\LoggerService.csproj", "{CAE0EB52-109A-442C-A963-DB0375C00D1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{935796DA-FA18-4937-A51B-1AEF8FC08474}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositary", "Repositary\Repositary.csproj", "{AA43F078-4B7A-4BA1-95E0-B061A9D06E04}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{CAE0EB52-109A-442C-A963-DB0375C00D1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAE0EB52-109A-442C-A963-DB0375C00D1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAE0EB52-109A-442C-A963-DB0375C00D1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{935796DA-FA18-4937-A51B-1AEF8FC08474}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{935796DA-FA18-4937-A51B-1AEF8FC08474}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{935796DA-FA18-4937-A51B-1AEF8FC08474}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{935796DA-FA18-4937-A51B-1AEF8FC08474}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA43F078-4B7A-4BA1-95E0-B061A9D06E04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA43F078-4B7A-4BA1-95E0-B061A9D06E04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA43F078-4B7A-4BA1-95E0-B061A9D06E04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA43F078-4B7A-4BA1-95E0-B061A9D06E04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
