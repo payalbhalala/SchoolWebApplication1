@@ -8,7 +8,7 @@ namespace Repository
         private RepositoryContext _repositoryContext;
         private IOrganizationRepository _organizationRepository;
         private IUserRepository _userRepository;
-
+        private ISectionEnrollmentRepository _sectionenrollmentRepository;
         public RepositoryManager(RepositoryContext repositoryContext)
         {
             _repositoryContext = repositoryContext;
@@ -33,6 +33,16 @@ namespace Repository
                     _userRepository = new UserRepository(_repositoryContext);
 
                 return _userRepository;
+            }
+        }
+        public ISectionEnrollmentRepository SectionEnrollment
+        {
+            get
+            {
+                if (_sectionenrollmentRepository == null)
+                    _sectionenrollmentRepository = new SectionEnrollmentRepository(_repositoryContext);
+
+                return _sectionenrollmentRepository;
             }
         }
 

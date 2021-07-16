@@ -15,9 +15,11 @@ namespace Entities
         {
             modelBuilder.ApplyConfiguration(new OrganizationConfiguration());
             modelBuilder.ApplyConfiguration(new UserConfiguration());
+            modelBuilder.ApplyConfiguration(new SectionEnrollmentConfiguration());
         }
 
         public DbSet<Organization> Organizations { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<SectionEnrollment> SectionEnrollments { get; set; }
     }
 }
